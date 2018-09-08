@@ -29,29 +29,29 @@ variable :DEPLOYMENT_SIGNATURE, :String, default: "Optional"
 # for more development experience
 
 # Github for github related access
-variable :GITHUB_KEY, :String, default: "Optional"
-variable :GITHUB_SECRET, :String, default: "Optional"
-variable :GITHUB_TOKEN, :String, default: "Optional"
+variable :GITHUB_KEY, :String, default: "8e0889dbb2ff868bb65c"
+variable :GITHUB_SECRET, :String, default: "d0ae524efb7123b0bca3bff650c4f29e75c12da0"
+variable :GITHUB_TOKEN, :String, default: "9e09be5aba21a1bbfea06544290d9d026eac5e29"
 
 # Twitter for normal twitter access
-variable :TWITTER_ACCESS_TOKEN, :String, default: "Optional"
-variable :TWITTER_ACCESS_TOKEN_SECRET, :String, default: "Optional"
-variable :TWITTER_KEY, :String, default: "Optional"
-variable :TWITTER_SECRET, :String, default: "Optional"
+variable :TWITTER_ACCESS_TOKEN, :String, default: "1091881279-GxP2HCwOIi7o7WoZXLpsFXBZNfxBJAK4aew3OSi"
+variable :TWITTER_ACCESS_TOKEN_SECRET, :String, default: "XBlT9Bqr0SPRtMbHwMeaxH82lTME2c44TcvWwj76g8vyK"
+variable :TWITTER_KEY, :String, default: "Dcg4WeGJZZZ6fGr9cnws1m32Y"
+variable :TWITTER_SECRET, :String, default: "2Bk3OxIjSN9y4rDTWRfMAG7QVm7BmwsLtAQUnNtQxIq2ITEhpK"
 
 ################################################
 ######### Optional 3rd Party Services ##########
 ################################################
 
 # Airbrake for error tracking
-variable :AIRBRAKE_API_KEY, :String, default: "Optional"
+variable :AIRBRAKE_API_KEY, :String, default: "AritbrakeAPIkey"
 variable :AIRBRAKE_PROJECT_ID, :integer, default: 00000
 
 # Algolia for search (not optional)
 only_in_test = proc { ENV['RACK_ENV'] == "test" ? "test-test" : nil}
-variable :ALGOLIASEARCH_API_KEY, :String, default: only_in_test
-variable :ALGOLIASEARCH_APPLICATION_ID, :String, default: only_in_test
-variable :ALGOLIASEARCH_SEARCH_ONLY_KEY, :String, default: only_in_test
+variable :ALGOLIASEARCH_API_KEY, :String, default: "only_in_test"
+variable :ALGOLIASEARCH_APPLICATION_ID, :String, default: "only_in_test"
+variable :ALGOLIASEARCH_SEARCH_ONLY_KEY, :String, default: "only_in_test"
 
 # AWS for images storages
 variable :AWS_ID, :String, default: "Optional"
