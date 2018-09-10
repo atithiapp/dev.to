@@ -28,7 +28,7 @@ default: &default
 development:
   <<: *default
   database: 36INC
-  username: postgres
+  username: rizwan
   password: rizwan@123
 
   # The specified database role being used to connect to postgres.
@@ -60,7 +60,7 @@ test:
   <<: *default
   host: localhost
   database: 36INC
-  username: postgres
+  username: rizwan
   password: rizwan@123
 
 
@@ -86,7 +86,7 @@ test:
 production:
   <<: *default
   database: PracticalDeveloper_production
-  username: postgres
+  username: rizwan
   pool: <%= ENV['DATABASE_POOL_SIZE'] %>
   #  password: <%= ENV['PRACTICALDEVELOPER_DATABASE_PASSWORD'] %>
   password: rizwan@123
