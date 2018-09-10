@@ -27,6 +27,7 @@ default: &default
 
 development:
   <<: *default
+  host: 159.89.163.143
   database: 36INC
   username: rizwan
   password: rizwan@123
@@ -85,6 +86,7 @@ test:
 #
 production:
   <<: *default
+  host: 159.89.163.143
   database: PracticalDeveloper_production
   username: rizwan
   pool: <%= ENV['DATABASE_POOL_SIZE'] %>
