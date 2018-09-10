@@ -59,7 +59,7 @@ development:
 test:
   <<: *default
   host: localhost
-  database: PracticalDeveloper_test<%= ENV['TEST_ENV_NUMBER'] %>
+  database: 36INC
   username: postgres
   password: rizwan@123
 
@@ -86,7 +86,7 @@ test:
 production:
   <<: *default
   database: PracticalDeveloper_production
-  username: root
+  username: postgres
   pool: <%= ENV['DATABASE_POOL_SIZE'] %>
   #  password: <%= ENV['PRACTICALDEVELOPER_DATABASE_PASSWORD'] %>
-  password: admin
+  password: rizwan@123
